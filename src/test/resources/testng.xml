@@ -1,0 +1,20 @@
+<suite name="UI Test Suite">
+    
+    <!-- Global browser parameter -->
+    <parameter name="browser" value="chrome"/>
+
+    <!-- Global listeners -->
+    <listeners>
+        <listener class-name="costar.testing.ui.config.DriverListener"/>
+    </listeners>
+
+    <!-- Test group -->
+    <test name="CoStar Career UI Test">
+        <classes>
+        <!--
+            <class name="costar.testing.ui.tests.CoStarCareerTest"/>
+        -->
+            <class name="costar.testing.api.tests.CoStarApiTests"/>
+        </classes>>
+    </test>
+</suite>
