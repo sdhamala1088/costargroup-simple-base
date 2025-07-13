@@ -10,7 +10,7 @@ public class ConfigReader {
 
     static {
         try {
-            FileInputStream fis = new FileInputStream("/home/sanketdhamala/repotest/testing/src/test/resources/apiconfig.properties");
+            FileInputStream fis = new FileInputStream("src/test/resources/apiconfig.properties");
             props.load(fis);
         } catch (IOException e) {
             throw new RuntimeException("Failed to load config.properties: " + e.getMessage(), e);

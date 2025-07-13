@@ -19,7 +19,7 @@ public class DBUtil {
         if (threadLocalConnection.get() == null || threadLocalConnection.get().isClosed()) {
         	
             Properties props = new Properties();
-            props.load(new FileInputStream("/home/sanketdhamala/repotest/testing/src/test/resources/dbconfig.properties"));
+            props.load(new FileInputStream("src/test/resources/dbconfig.properties"));
 
             String url = props.getProperty("db.url");
             String user = props.getProperty("db.username");

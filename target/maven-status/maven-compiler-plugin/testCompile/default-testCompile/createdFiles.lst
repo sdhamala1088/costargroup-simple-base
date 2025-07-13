@@ -2,7 +2,6 @@ costar/testing/ui/config/DriverListener.class
 costar/testing/ui/pages/BasePage.class
 costar/testing/db/tests/DBBaseTest.class
 costar/testing/api/utils/ConfigReader.class
-costar/testing/AppTest.class
 costar/testing/api/tests/CoStarApiTests.class
 costar/testing/ui/utils/RetryUtil.class
 costar/testing/db/utils/RegexUtil.class

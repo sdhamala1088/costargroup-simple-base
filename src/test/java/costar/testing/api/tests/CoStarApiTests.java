@@ -41,7 +41,7 @@ public class CoStarApiTests {
 		.response();
 		
 		JsonNode actualUser = getJsonNodeForField(rs.asString(), "data");
-		JsonNode expectedUser = getJsonNodeFromFile(new File("/home/sanketdhamala/repotest/testing/src/test/resources/expected_user.json"));
+		JsonNode expectedUser = getJsonNodeFromFile(new File("src/test/resources/expected_user.json"));
 		
         Assert.assertEquals(actualUser, expectedUser, "Actual user does not match expected JSON");
 	}

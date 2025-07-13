@@ -1,0 +1,56 @@
+2025-07-13 19:08:13.761 [main] INFO   - Json for field data = {
+  "id" : 2,
+  "email" : "janet.weaver@reqres.in",
+  "first_name" : "Janet",
+  "last_name" : "Weaver",
+  "avatar" : "https://reqres.in/img/faces/2-image.jpg"
+}
+2025-07-13 19:08:13.778 [main] INFO   - Json exatracted from file /home/sanketdhamala/repotest/testing/src/test/resources/expected_user.json = {
+  "id" : 2,
+  "email" : "janet.weaver@reqres.in",
+  "first_name" : "Janet",
+  "last_name" : "Weaver",
+  "avatar" : "https://reqres.in/img/faces/2-image.jpg"
+}
+2025-07-13 19:08:30.621 [main] INFO   - Json for field data = {
+  "id" : 2,
+  "email" : "janet.weaver@reqres.in",
+  "first_name" : "Janet",
+  "last_name" : "Weaver",
+  "avatar" : "https://reqres.in/img/faces/2-image.jpg"
+}
+2025-07-13 19:08:30.627 [main] INFO   - Json exatracted from file /home/sanketdhamala/repotest/testing/src/test/resources/expected_user.json = {
+  "id" : 2,
+  "email" : "janet.weaver@reqres.in",
+  "first_name" : "Janet",
+  "last_name" : "Weaver",
+  "avatar" : "https://reqres.in/img/faces/2-image.jpg"
+}
+2025-07-13 19:09:07.365 [main] INFO   - Json for field data = {
+  "id" : 2,
+  "email" : "janet.weaver@reqres.in",
+  "first_name" : "Janet",
+  "last_name" : "Weaver",
+  "avatar" : "https://reqres.in/img/faces/2-image.jpg"
+}
+2025-07-13 19:09:07.372 [main] INFO   - Json exatracted from file /home/sanketdhamala/repotest/testing/src/test/resources/expected_user.json = {
+  "id" : 2,
+  "email" : "janet.weaver@reqres.in",
+  "first_name" : "Janet",
+  "last_name" : "Weaver",
+  "avatar" : "https://reqres.in/img/faces/2-image.jpg"
+}
+2025-07-13 19:09:39.949 [main] INFO   - Json for field data = {
+  "id" : 2,
+  "email" : "janet.weaver@reqres.in",
+  "first_name" : "Janet",
+  "last_name" : "Weaver",
+  "avatar" : "https://reqres.in/img/faces/2-image.jpg"
+}
+2025-07-13 19:09:39.958 [main] INFO   - Json exatracted from file /home/sanketdhamala/repotest/testing/src/test/resources/expected_user.json = {
+  "id" : 2,
+  "email" : "janet.weaver@reqres.in",
+  "first_name" : "Janet",
+  "last_name" : "Weaver",
+  "avatar" : "https://reqres.in/img/faces/2-image.jpg"
+}

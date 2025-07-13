@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-13T18:31:41 EDT" name="UI Test Suite" finished-at="2025-07-13T18:31:47 EDT" duration-ms="5682">
+  <suite started-at="2025-07-13T19:09:37 EDT" name="UI Test Suite" finished-at="2025-07-13T19:09:39 EDT" duration-ms="2602">
     <groups>
     </groups>
-    <test started-at="2025-07-13T18:31:41 EDT" name="CoStar Career UI Test" finished-at="2025-07-13T18:31:47 EDT" duration-ms="5682">
+    <test started-at="2025-07-13T19:09:37 EDT" name="CoStar Career UI Test" finished-at="2025-07-13T19:09:39 EDT" duration-ms="2602">
       <class name="costar.testing.api.tests.CoStarApiTests">
-        <test-method is-config="true" signature="setupBaseUrl()[pri:0, instance:costar.testing.api.tests.CoStarApiTests@49c386c8]" started-at="2025-07-13T18:31:41 EDT" name="setupBaseUrl" finished-at="2025-07-13T18:31:42 EDT" duration-ms="1417" status="PASS">
+        <test-method is-config="true" signature="setupBaseUrl()[pri:0, instance:costar.testing.api.tests.CoStarApiTests@6e0dec4a]" started-at="2025-07-13T19:09:37 EDT" name="setupBaseUrl" finished-at="2025-07-13T19:09:38 EDT" duration-ms="703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBaseUrl -->
-        <test-method signature="validateUserData()[pri:0, instance:costar.testing.api.tests.CoStarApiTests@49c386c8]" started-at="2025-07-13T18:31:42 EDT" name="validateUserData" finished-at="2025-07-13T18:31:47 EDT" duration-ms="4189" status="PASS">
+        <test-method signature="validateUserData()[pri:0, instance:costar.testing.api.tests.CoStarApiTests@6e0dec4a]" started-at="2025-07-13T19:09:38 EDT" name="validateUserData" finished-at="2025-07-13T19:09:39 EDT" duration-ms="1869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserData -->
