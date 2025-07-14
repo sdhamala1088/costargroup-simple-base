@@ -12,7 +12,7 @@ This project is a **simple, modular test automation framework** designed for SDE
 
 ## 📁 Project Structure
 
-<img width="753" height="331" alt="image" src="https://github.com/user-attachments/assets/d25045e2-655e-41a9-94f0-48d401533ea0" />
+<img width="691" height="630" alt="image" src="https://github.com/user-attachments/assets/db7dfab8-bad0-4ad4-8838-26778b1e321b" />
 
 ---
 
