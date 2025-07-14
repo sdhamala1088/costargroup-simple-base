@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 
-import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -32,10 +31,11 @@ public class JsonTestUtil {
 		}
     	    	
     	if (jsonNode == null) {
-    		logger.log(Level.ERROR, String.format("No such field %s exists in json %s", field, jsonString));
+    		logger.error("No such field {} exists in json {}", field, jsonString);
+    	} else {
+    		logger.info("Json for field {} = {}", field, jsonNode.toPrettyString());
     	}
-    	
-		logger.log(Level.INFO, String.format("Json for field %s = %s", field, jsonNode.toPrettyString()));
+		
     	return jsonNode;
     }
     
@@ -51,7 +51,13 @@ public class JsonTestUtil {
 			e.printStackTrace();
 		}
     	
-		logger.log(Level.INFO, String.format("Json exatracted from file %s = %s", file.getAbsolutePath(), jsonNode.toPrettyString()));
+    	if (jsonNode == null) {
+    		logger.error("No json could be loaded from file {}", file);
+    	} else {
+    		logger.info("Json extracted from file {} = {}", file.getAbsolutePath(), jsonNode.toPrettyString());
+
+    	}
+    	
 		return jsonNode;
     }
 

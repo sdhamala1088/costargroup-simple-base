@@ -34,7 +34,7 @@ public class DriverFactory {
 		switch (browser) {
 
 			case "chrome":
-				System.setProperty("webdriver.chrome.driver", "/home/sanketdhamala/repotest/testing/src/test/resources/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--start-maximized");
 			    options.addArguments("--remote-allow-origins=*");
@@ -49,7 +49,7 @@ public class DriverFactory {
 			case "edge":
 				break;
 			default:
-				break;
+			    throw new IllegalArgumentException("Unsupported browser: " + browser);
 		}
 		
 	}

@@ -17,13 +17,14 @@ import java.io.File;
 import static costar.testing.api.utils.JsonTestUtil.getJsonNodeForField;
 import static costar.testing.api.utils.JsonTestUtil.getJsonNodeFromFile;
 
-
-
-public class CoStarApiTests {
+public class UserApiTests {
 	
+	private static final String EXPECTED_USER_PATH = "src/test/resources/expected_user.json";
 	
 	@BeforeClass
 	public void setupBaseUrl() {
+		
+		ConfigReader.load("src/test/resources/api-config.properties");
 		
 		RestAssured.baseURI = ConfigReader.get("api.url");
 		RestAssured.requestSpecification = given()
@@ -31,7 +32,7 @@ public class CoStarApiTests {
 				.header("Content-Type", "application/json");
 	}
 	
-	@Test
+	@Test(description = "Validate that GET /api/users/2 returns correct user data")
 	public void validateUserData() {
 		
 		Response rs = given().when().get("/api/users/2")
@@ -41,7 +42,7 @@ public class CoStarApiTests {
 		.response();
 		
 		JsonNode actualUser = getJsonNodeForField(rs.asString(), "data");
-		JsonNode expectedUser = getJsonNodeFromFile(new File("src/test/resources/expected_user.json"));
+		JsonNode expectedUser = getJsonNodeFromFile(new File(EXPECTED_USER_PATH));
 		
         Assert.assertEquals(actualUser, expectedUser, "Actual user does not match expected JSON");
 	}
