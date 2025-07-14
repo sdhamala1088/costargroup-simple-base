@@ -12,22 +12,7 @@ This project is a **simple, modular test automation framework** designed for SDE
 
 ## 📁 Project Structure
 
-src/
-├── main/
-│ └── java/
-│ └── costar.testing/
-│ ├── api/ # API test utilities and test classes
-│ ├── db/ # DB test utilities and test classes
-│ └── ui/ # UI test utilities and page classes
-├── test/
-│ └── java/
-│ └── costar.testing/
-│ └── tests/ # TestNG test classes
-└── resources/
-├── apiconfig.properties
-├── db-config.properties
-├── expected_user.json
-└── chromedriver
+<img width="753" height="331" alt="image" src="https://github.com/user-attachments/assets/d25045e2-655e-41a9-94f0-48d401533ea0" />
 
 ---
 
