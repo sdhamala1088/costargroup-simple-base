@@ -40,7 +40,7 @@ public class DriverFactory {
 			    options.addArguments("--remote-allow-origins=*");
 			    options.addArguments("--disable-dev-shm-usage");
 			    options.addArguments("--no-sandbox");
-			    options.setExperimentalOption("w3c", true); // ✅ disable DevTools WebSocket
+			    options.setExperimentalOption("w3c", true); 
 				driver.set(new ChromeDriver(options));
 				driver.get().manage().timeouts().implicitlyWait(Duration.ofMillis(500));
 				break;

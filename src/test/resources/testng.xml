@@ -14,7 +14,7 @@
         <!--
             <class name="costar.testing.ui.tests.CoStarCareerTest"/>
         -->
-            <class name="costar.testing.api.tests.CoStarApiTests"/>
+            <class name="costar.testing.api.tests.UserApiTests"/>
         </classes>>
     </test>
 </suite>
