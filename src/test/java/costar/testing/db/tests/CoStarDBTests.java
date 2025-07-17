@@ -30,7 +30,8 @@ public class CoStarDBTests extends DBBaseTest {
 		Assert.assertTrue(clientsWithInvalidEmail.isEmpty(), "Invalid email(s) found for client IDs: " + clientsWithInvalidEmail);
 	}
 	
-	@Test(description = "Ensure all transactions reference valid account IDs", groups = {"database"})
+	@Test(description = "Ensure all transactions reference valid account IDs", 
+			groups = {"database"})
 	public void testTransactionsHaveValidAccounts() throws Exception {
 		// Add try with resource
 	    Statement stmt = connection.createStatement();

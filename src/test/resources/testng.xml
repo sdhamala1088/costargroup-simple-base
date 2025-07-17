@@ -1,4 +1,4 @@
-<suite name="UI/API/DB Suite">
+<suite name="UI/API/DB Suite" parallel="classes" thread-count="2">
     
     <!-- Global browser parameter -->
     <parameter name="browser" value="chrome"/>
@@ -13,8 +13,8 @@
     <!-- Test group -->
     <test name="CoStar Career DB Test">
         <classes>
-       
-        	<class name="costar.testing.db.tests.CoStarDBTests"/>>
+       		<class name="costar.testing.api.tests.UserApiTests"/>
+        	<class name="costar.testing.db.tests.CoStarDBTests"/>
         </classes>>
     </test>
 </suite>
