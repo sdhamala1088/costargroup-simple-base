@@ -34,12 +34,13 @@ public class DriverFactory {
 		switch (browser) {
 
 			case "chrome":
-				System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+				System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--start-maximized");
 			    options.addArguments("--remote-allow-origins=*");
 			    options.addArguments("--disable-dev-shm-usage");
 			    options.addArguments("--no-sandbox");
+			    options.addArguments("--allow-file-access-from-files");
 			    options.setExperimentalOption("w3c", true); 
 				driver.set(new ChromeDriver(options));
 				driver.get().manage().timeouts().implicitlyWait(Duration.ofMillis(500));

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class CoStarDBTests extends DBBaseTest {
 	
-	@Test(description = "Ensure emails exists and is correctly formatted for all clients")
+	@Test(description = "Ensure emails exists and is correctly formatted for all clients", groups = {"database"})
 	public void testEmailExistsAndIsCorrectlyFormatted() throws Exception {
 		Statement stmt = connection.createStatement();
 		ResultSet rs = stmt.executeQuery("""
@@ -30,7 +30,7 @@ public class CoStarDBTests extends DBBaseTest {
 		Assert.assertTrue(clientsWithInvalidEmail.isEmpty(), "Invalid email(s) found for client IDs: " + clientsWithInvalidEmail);
 	}
 	
-	@Test(description = "Ensure all transactions reference valid account IDs")
+	@Test(description = "Ensure all transactions reference valid account IDs", groups = {"database"})
 	public void testTransactionsHaveValidAccounts() throws Exception {
 		// Add try with resource
 	    Statement stmt = connection.createStatement();

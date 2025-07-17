@@ -1,4 +1,4 @@
-<suite name="UI Test Suite">
+<suite name="UI/API/DB Suite">
     
     <!-- Global browser parameter -->
     <parameter name="browser" value="chrome"/>
@@ -6,15 +6,15 @@
     <!-- Global listeners -->
     <listeners>
         <listener class-name="costar.testing.ui.config.DriverListener"/>
-    </listeners>
+        <listener class-name="costar.testing.base.util.AnnotationTransformer"/>>
+  </listeners>
+
 
     <!-- Test group -->
-    <test name="CoStar Career UI Test">
+    <test name="CoStar Career DB Test">
         <classes>
-        <!--
-            <class name="costar.testing.ui.tests.CoStarCareerTest"/>
-        -->
-            <class name="costar.testing.api.tests.UserApiTests"/>
+       
+        	<class name="costar.testing.db.tests.CoStarDBTests"/>>
         </classes>>
     </test>
 </suite>

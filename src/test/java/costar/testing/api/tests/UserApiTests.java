@@ -32,7 +32,7 @@ public class UserApiTests {
 				.header("Content-Type", "application/json");
 	}
 	
-	@Test(description = "Validate that GET /api/users/2 returns correct user data")
+	@Test(description = "Validate that GET /api/users/2 returns correct user data", groups= {"smoke", "api"})
 	public void validateUserData() {
 		
 		Response rs = given().when().get("/api/users/2")

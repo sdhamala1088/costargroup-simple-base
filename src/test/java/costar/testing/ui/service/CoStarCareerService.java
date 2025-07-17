@@ -1,12 +1,12 @@
 package costar.testing.ui.service;
 
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import costar.testing.ui.pages.CoStarBasePage;
 import costar.testing.ui.pages.CoStarCareerPage;
 import costar.testing.ui.pages.CoStarJobsPage;
 import costar.testing.ui.utils.WaitUtil;
-import junit.framework.Assert;
 
 public class CoStarCareerService {
 	

@@ -28,7 +28,7 @@ public class CoStarCareerTest {
 		DriverFactory.quitDriver();
 	}
 	
-	@Test (dataProvider = "sdet_alias")
+	@Test (dataProvider = "sdet_alias", testName = "Test Authentication", groups= {"smoke", "ui"})
 	public void searchForSDETJob(String jobTitle) {
 		driver.get(HOME_URL);
 		costarCareerService.isAutomationJobAvailable(jobTitle);
