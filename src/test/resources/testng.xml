@@ -13,8 +13,7 @@
     <!-- Test group -->
     <test name="CoStar Career DB Test">
         <classes>
-       		<class name="costar.testing.api.tests.UserApiTests"/>
-        	<class name="costar.testing.db.tests.CoStarDBTests"/>
+        	<class name="costar.testing.ui.tests.CoStarCareerTest"/>
         </classes>>
     </test>
 </suite>
